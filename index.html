@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Image Slider Library</h1>
+        <p>A responsive image slider built with HTML, CSS and JavaScript.</p>
+
+        <div class="slider" data-slider>
+            <div class="slider-viewport">
+                <div class="slider-track" data-track>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1714252562841-8879d4d9f68f?q=80&w=1243&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             alt="Picture of a man in horse">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             alt="Mountain landscape with a lake in the foreground">
+                    </div>
+
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1274&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                             alt="Green forest with sunset">
+                    </div>
+
+                </div>
+
+                <button class="prev" data-prev aria-label="Previous image">
+                    &#10094;
+                </button>
+
+                <button class="next" data-next aria-label="Next image">
+                    &#10095;
+                </button>
+            </div>
+
+            <div class="slider-dots" data-dots></div>
+            <p class="slide-counter" data-counter></p>
+            <p class="sr-only" data-status aria-live="polite"></p>
+        </div>
+    </main>
+
+</body>
+</html>
